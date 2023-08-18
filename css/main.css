@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vmin;
+
+  /* background-image: url(https://4kwallpapers.com/images/wallpapers/spiral-galaxy-milky-way-stars-deep-space-colorful-astronomy-3440x1440-5363.jpg); */
+  background-image: url(https://i.pinimg.com/736x/ed/a8/19/eda819a7a40d7fb7967a019a7afa64e9.jpg);
+  background-position: center;
+
+  color: rgb(255, 255, 255);
+  font-size: 6vmin;
+  font-family: 'Handjet', cursive;
+}
+
+body {
+  height: 100vh; 
+  margin: 0;
+  font-family: 'Jost', sans-serif;
+}
+
+img {
+  height: 100px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#letters {
+  display: grid;
+  grid-template-columns: repeat(6, 5vmin);
+  grid-template-rows: repeat(5, 5vmin);
+  gap: 1vmin;
+}
+
+.alpha {
+  background-color: rgb(199, 199, 255);
+  border: 0.5vmin solid black;
+  border-radius: 1vmin;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 3vmin;
+  font-weight: 900;
+}
+
+button {
+
+}
