@@ -7,7 +7,6 @@ header {
   justify-content: center;
   height: 15vmin;
 
-  /* background-image: url(https://4kwallpapers.com/images/wallpapers/spiral-galaxy-milky-way-stars-deep-space-colorful-astronomy-3440x1440-5363.jpg); */
   background-image: url(https://i.pinimg.com/736x/ed/a8/19/eda819a7a40d7fb7967a019a7afa64e9.jpg);
   background-position: center;
 
@@ -19,24 +18,28 @@ header {
 body {
   height: 100vh; 
   margin: 0;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Rubik', sans-serif;;
 }
 
-img {
-  height: 100px;
+#spaceman-filmstrip {
+  width: 504px; 
+  height: 687px; 
+  background-image: url(../imgs/spaceman-filmstrip.png);
+  transform: scale(.5); 
 }
 
 main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin: 6vmin 3vmin;
 }
 
 #letters {
   display: grid;
-  grid-template-columns: repeat(6, 5vmin);
-  grid-template-rows: repeat(5, 5vmin);
+  grid-template-columns: repeat(6, 8vmin);
+  grid-template-rows: repeat(5, 8vmin);
   gap: 1vmin;
 }
 
@@ -53,6 +56,44 @@ main {
   font-weight: 900;
 }
 
-button {
+.play-again {
+height: 10vmin;
+border: 0.5vmin rgb(15, 38, 95) solid;
+border-radius: 10vmin;
 
+font-size: 3vmin;
+font-weight: 900;
+color: rgb(15, 38, 95);
+background-color: rgb(132, 178, 242);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#subhead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 15vmin;
+  margin: 0;
+
+  background-color: rgb(32, 54, 133);
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vmin;
+}
+
+#word-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
