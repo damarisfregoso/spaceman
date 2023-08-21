@@ -12,7 +12,8 @@ const bgPlayer = document.getElementById('bg-player');
 const bgCheckbox = document.querySelector('input[type="checkbox"]');
 bgPlayer.volume = .1;
 // const btnEls = [...document.querySelectorAll('#btns-container > button')];
-// const imgPath = `imgs/spaceman-0${wrongGuesses.length}`;
+
+const imgEl = document.querySelector('img');
 const msgEl = document.getElementById('subhead');
 const playAgainBtn = document.getElementById('play-again');
 const letterBtns = document.querySelectorAll('#letters > button');
@@ -39,7 +40,8 @@ function render() {
   renderMusic();
   renderControls();
   renderButtons();
-
+  const imgPath = `imgs/spaceman-${wrongGuessed.length}.jpg`;
+  imgEl.src = imgPath;
   wordDisplay.innerHTML = guess;
 }
 
@@ -73,12 +75,21 @@ function handleBtnClick(evt) {
     let newGuess = '';
     const wordArr = [...wordSelected];
     wordArr.forEach(function(char, charIdx) {
-      
-      console.log(char, charIdx);
-    })
+      if (char === letter) {
+        newGuess += letter;
+      } else {
+        newGuess += guess.charAt(charIdx);
+      }
+    });
+    guess = newGuess;
   } else {
     //incorrect guess
     wrongGuessed.push(letter);
   }
+  winner = getWinner();
   render();
+}
+
+function getWinner() {
+  
 }

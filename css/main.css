@@ -85,7 +85,7 @@ footer {
   background-color: rgb(32, 54, 133);
 }
 
-#display {
+#displayGuesses {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,4 +96,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  letter-spacing: 3vmin;
+  font-size: 6vmin;
 }
