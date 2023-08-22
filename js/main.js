@@ -18,6 +18,7 @@ const msgEl = document.getElementById('subhead');
 const playAgainBtn = document.getElementById('play-again');
 const letterBtns = document.querySelectorAll('#letters > button');
 const wordDisplay = document.getElementById('word-display');
+const displayGuesses = document.getElementById('displayGuesses')
 
 /*----- event listeners -----*/
 bgCheckbox.addEventListener('change', renderMusic);
@@ -40,9 +41,16 @@ function render() {
   renderMusic();
   renderControls();
   renderButtons();
+  renderGuessesLeft();
   const imgPath = `imgs/spaceman-${wrongGuessed.length}.jpg`;
   imgEl.src = imgPath;
   wordDisplay.innerHTML = guess;
+}
+
+function renderGuessesLeft() {
+  if (wrongGuessed.length) {
+    maxGuesses = maxGuesses 
+  }
 }
 
 function renderControls() {
@@ -54,8 +62,10 @@ function renderButtons() {
     letter = btn.innerHTML;
     if (guess.includes(letter)) {
       btn.style.backgroundColor = 'green';
+      // btn.style.color = 'rgb(131, 255, 134)'
     } else if (wrongGuessed.includes(letter)) {
       btn.style.backgroundColor = 'red';
+      // btn.style.color = 'rgb(255, 131, 131)'
     } else {
       //resets for play again 
       btn.style.backgroundColor = 'rgb(199, 199, 255)';
@@ -86,10 +96,12 @@ function handleBtnClick(evt) {
     //incorrect guess
     wrongGuessed.push(letter);
   }
-  winner = getWinner();
+  winner = getWinner()
   render();
 }
 
 function getWinner() {
-  
+  if (guess === wordSelected) return 'W';
+  if (wrongGuessed.length === maxGuesses) return 'L'
+  return null;
 }

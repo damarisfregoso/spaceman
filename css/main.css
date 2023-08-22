@@ -16,16 +16,9 @@ header {
 }
 
 body {
-  height: 100vh; 
+  height: 100vh;
   margin: 0;
   font-family: 'Rubik', sans-serif;;
-}
-
-#spaceman-filmstrip {
-  width: 504px; 
-  height: 687px; 
-  background-image: url(../imgs/spaceman-filmstrip.png);
-  transform: scale(.5); 
 }
 
 main {
@@ -33,7 +26,8 @@ main {
   align-items: center;
   justify-content: center;
 
-  margin: 6vmin 3vmin;
+  margin: 1vmin 3vmin;
+  /* padding: 0; */
 }
 
 #letters {
@@ -79,7 +73,7 @@ footer {
   justify-content: center;
   align-items: center;
 
-  height: 15vmin;
+  height: 10vmin;
   margin: 0;
 
   background-color: rgb(32, 54, 133);
@@ -90,6 +84,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 3vmin;
+  color: rgb(252, 118, 118);
 }
 
 #word-display {
@@ -99,4 +94,9 @@ footer {
 
   letter-spacing: 3vmin;
   font-size: 6vmin;
+}
+
+img {
+  height: 35vmin;
+  margin: 10vmin;
 }
