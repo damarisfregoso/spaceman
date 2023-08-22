@@ -18,7 +18,8 @@ header {
 body {
   height: 100vh;
   margin: 0;
-  font-family: 'Rubik', sans-serif;;
+  font-family: 'Rubik', sans-serif;
+  background-image: url(https://wallpaper-house.com/data/out/9/wallpaper2you_302840.jpg);
 }
 
 main {
@@ -26,7 +27,7 @@ main {
   align-items: center;
   justify-content: center;
 
-  margin: 1vmin 3vmin;
+  margin: 0 3vmin;
   /* padding: 0; */
 }
 
@@ -50,15 +51,25 @@ main {
   font-weight: 900;
 }
 
+.alpha:hover {
+  cursor: pointer;
+}
+
 #play-again {
 height: 10vmin;
-border: 0.5vmin rgb(15, 38, 95) solid;
+border: 0.5vmin rgb(245, 245, 245) solid;
 border-radius: 10vmin;
 
 font-size: 3vmin;
 font-weight: 900;
-color: rgb(15, 38, 95);
-background-color: rgb(132, 178, 242);
+color: rgb(131, 255, 134);
+background-color: rgb(0, 0, 0);
+}
+
+#play-again:hover{
+  background-color: rgb(227, 227, 227);
+  border: 0.5vmin rgb(131, 255, 134) solid;
+  cursor: pointer;
 }
 
 footer {
@@ -76,15 +87,24 @@ footer {
   height: 10vmin;
   margin: 0;
 
-  background-color: rgb(32, 54, 133);
+  background-color: rgb(192, 192, 192);
+  color: rgb(0, 0, 0);
 }
 
 #displayGuesses {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 3vmin;
-  color: rgb(252, 118, 118);
+  margin: 1vmin;
+
+  font-size: 4vmin;
+  font-weight: 900;
+	-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(51, 139, 0);
+}
+
+#word-display:hover{
+  cursor: none;
 }
 
 #word-display {
@@ -94,9 +114,30 @@ footer {
 
   letter-spacing: 3vmin;
   font-size: 6vmin;
+  font-weight: 900;
+  -webkit-text-stroke-width: 0.1vmin;
+    -webkit-text-stroke-color: rgb(179, 0, 98);
+    
 }
 
 img {
   height: 35vmin;
   margin: 10vmin;
+
+  animation: shake 2.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
