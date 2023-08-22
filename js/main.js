@@ -42,14 +42,29 @@ function render() {
   renderControls();
   renderButtons();
   renderGuessesLeft();
+  renderMesssage();
   const imgPath = `imgs/spaceman-${wrongGuessed.length}.jpg`;
   imgEl.src = imgPath;
   wordDisplay.innerHTML = guess;
 }
 
+function renderMesssage() {
+  if (winner === 'W') {
+    msgEl.innerHTML = 'You Guessed It Correct!'
+  } else if (winner === 'L') {
+    msgEl.innerHTML = `The word was ${wordSelected}!`
+  } else {
+    msgEl.innerHTML = 'Guess A Letter!'
+  }
+}
+
 function renderGuessesLeft() {
-  if (wrongGuessed.length) {
-    maxGuesses = maxGuesses 
+  if (winner === null) {
+    displayGuesses.innerHTML = `${maxGuesses - wrongGuessed.length} Guesses Left!`
+  } else if (winner === 'L') {
+    displayGuesses.innerHTML = 'Sorry you are all out turns!'
+  } else {
+    displayGuesses.innerHTML = `You got it with ${maxGuesses - wrongGuessed.length} Guesses Left!`
   }
 }
 
@@ -61,14 +76,15 @@ function renderButtons() {
   letterBtns.forEach(function(btn) {
     letter = btn.innerHTML;
     if (guess.includes(letter)) {
-      btn.style.backgroundColor = 'green';
-      // btn.style.color = 'rgb(131, 255, 134)'
+      btn.style.backgroundColor = 'black';
+      btn.style.color = 'rgb(131, 255, 134)'
     } else if (wrongGuessed.includes(letter)) {
-      btn.style.backgroundColor = 'red';
-      // btn.style.color = 'rgb(255, 131, 131)'
+      btn.style.backgroundColor = 'black';
+      btn.style.color = 'rgb(255, 131, 131)'
     } else {
       //resets for play again 
       btn.style.backgroundColor = 'rgb(199, 199, 255)';
+      btn.style.color = 'black'
     }
   })
 }
