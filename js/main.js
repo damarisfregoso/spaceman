@@ -76,11 +76,11 @@ function renderButtons() {
   letterBtns.forEach(function(btn) {
     letter = btn.innerHTML;
     if (guess.includes(letter)) {
-      btn.style.backgroundColor = 'green';
-      // btn.style.color = 'rgb(131, 255, 134)'
+      btn.style.backgroundColor = 'black';
+      btn.style.color = 'rgb(131, 255, 134)'
     } else if (wrongGuessed.includes(letter)) {
-      btn.style.backgroundColor = 'red';
-      // btn.style.color = 'rgb(255, 131, 131)'
+      btn.style.backgroundColor = 'black';
+      btn.style.color = 'rgb(255, 131, 131)'
     } else {
       //resets for play again 
       btn.style.backgroundColor = 'rgb(199, 199, 255)';
