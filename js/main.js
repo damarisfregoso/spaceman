@@ -1,5 +1,5 @@
 	/*----- constants -----*/
-const secretWords = ['SPACEMAN', 'STARS', 'GALAXY', 'ALIENS', 'MILKYWAY', 'SPACESHIP', 'ASTRONAUT', 'PLANETS'];
+const secretWords = ['SPACEMAN', 'STARS', 'GALAXY', 'ALIENS', 'MILKYWAY', 'SPACESHIP', 'ASTRONAUT', 'PLANETS', 'BIG DIPPER', 'IN A GALAXY FAR FAR AWAY', 'MULTIUNIVERSE', 'SHOOTING STARS', 'ROCKET'];
 const maxGuesses = 6;
 /*----- state variables -----*/
 let winner;
@@ -11,8 +11,6 @@ let guess; //correct guesses
 const bgPlayer = document.getElementById('bg-player');
 const bgCheckbox = document.querySelector('input[type="checkbox"]');
 bgPlayer.volume = .1;
-// const btnEls = [...document.querySelectorAll('#btns-container > button')];
-
 const imgEl = document.querySelector('img');
 const msgEl = document.getElementById('subhead');
 const playAgainBtn = document.getElementById('play-again');
@@ -22,9 +20,9 @@ const displayGuesses = document.getElementById('displayGuesses')
 
 /*----- event listeners -----*/
 bgCheckbox.addEventListener('change', renderMusic);
-// document.getElementById('btns-container').addEventListener('click', handleBtnClick);
 document.getElementById('letters').addEventListener('click', handleBtnClick);
 playAgainBtn.addEventListener('click', init);
+
 /*----- functions -----*/
 init();
 
@@ -32,10 +30,10 @@ function init() {
   winner = null;
   wordSelected = secretWords[Math.floor(Math.random() * secretWords.length)];
   wrongGuessed = [];
-  guess = "_".repeat(wordSelected.length);
+  let word = wordSelected.split('');
+  guess = word.map(ltr => ltr === ' ' ? ' ' : '_').join('');
   render();
 }
-
 
 function render() {
   renderMusic();
