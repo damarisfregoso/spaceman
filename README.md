@@ -3,7 +3,9 @@
 
 ![](imgs/coverphoto.jpeg)
 
-[Click To play](https://github.com/damarisfregoso/spaceman)
+[Click To play](https://damarisfregoso.github.io/spaceman/)
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fdamarisfregoso.github.io%2Fspaceman%2F&label=Visitors&labelColor=%2337d67a&countColor=%23fff091&style=flat)
 
 ## 🖨 Description 
 
