@@ -1,5 +1,5 @@
 	/*----- constants -----*/
-const secretWords = ['SPACEMAN', 'STARS', 'GALAXY', 'ALIENS', 'MILKYWAY', 'SPACESHIP', 'ASTRONAUT', 'PLANETS', 'BIG DIPPER', 'IN A GALAXY FAR FAR AWAY', 'MULTIUNIVERSE', 'SHOOTING STARS', 'ROCKET'];
+const secretWords = ['SPACEMAN', 'STARS', 'GALAXY', 'ALIENS', 'MILKYWAY', 'SPACESHIP', 'ASTRONAUT', 'PLANETS', 'BIG DIPPER', 'MULTIVERSE', 'SHOOTING STARS', 'ROCKET'];
 const maxGuesses = 6;
 /*----- state variables -----*/
 let winner;

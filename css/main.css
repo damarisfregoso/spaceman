@@ -83,9 +83,10 @@ footer {
 
 #subhead {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
+  font-size: 20px;
   height: 10vmin;
   margin: 0;
 
@@ -107,12 +108,14 @@ footer {
 
 #word-display {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
   white-space: pre;
 
   letter-spacing: 3vmin;
+  margin: 0 50px;
   font-size: 6vmin;
   font-weight: 900;
   -webkit-text-stroke-width: 0.1vmin;
