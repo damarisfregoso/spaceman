@@ -6,7 +6,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15vmin;
+  height: 130px;
 
   background-image: url(https://i.pinimg.com/736x/ed/a8/19/eda819a7a40d7fb7967a019a7afa64e9.jpg);
   background-position: center;
@@ -28,8 +28,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0 3vmin;
+  
+  /* margin: 0 3vmin; */
   /* padding: 0; */
 }
 
@@ -58,11 +58,12 @@ main {
 }
 
 #play-again {
-height: 10vmin;
+height: 45px;
+margin-top: 5px;
 border: 0.5vmin rgb(245, 245, 245) solid;
 border-radius: 10vmin;
 
-font-size: 3vmin;
+font-size: 20px;
 font-weight: 900;
 color: rgb(131, 255, 134);
 background-color: rgb(0, 0, 0);
@@ -70,7 +71,8 @@ background-color: rgb(0, 0, 0);
 
 #play-again:hover{
   background-color: rgb(227, 227, 227);
-  border: 0.5vmin rgb(131, 255, 134) solid;
+  border: 0.5vmin rgb(0, 144, 0) solid;
+  color: rgb(0, 144, 0);
   cursor: pointer;
 }
 
@@ -87,7 +89,7 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  height: 10vmin;
+  height: 40px;
   margin: 0;
 
   background-color: rgb(192, 192, 192);
@@ -100,7 +102,7 @@ footer {
   align-items: center;
   margin: 1vmin;
 
-  font-size: 4vmin;
+  font-size: 35px;
   font-weight: 900;
 	-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(51, 139, 0);
@@ -114,9 +116,9 @@ footer {
 
   white-space: pre;
 
-  letter-spacing: 3vmin;
+  letter-spacing: 20px;
   margin: 0 50px;
-  font-size: 6vmin;
+  font-size: 55px;
   font-weight: 900;
   -webkit-text-stroke-width: 0.1vmin;
     -webkit-text-stroke-color: rgb(179, 0, 98);
@@ -151,4 +153,13 @@ footer {
 
 #letter-Y {
   grid-column: 3;
+}
+
+label {
+  margin-top: 20px;
+}
+
+.created {
+margin-top: 2px;
+margin-bottom: 0;
 }
