@@ -28,7 +28,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin: 0 3vmin;
 }
 
 #letters {
@@ -61,7 +61,7 @@ margin-top: 5px;
 border: 0.5vmin rgb(245, 245, 245) solid;
 border-radius: 10vmin;
 
-font-size: 20px;
+font-size: 2vmin;
 font-weight: 900;
 color: rgb(131, 255, 134);
 background-color: rgb(0, 0, 0);
@@ -100,7 +100,7 @@ footer {
   align-items: center;
   margin-top: 1vmin;
 
-  font-size: 3.5vmin;
+  font-size: 3vmin;
   font-weight: 900;
 	-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(51, 139, 0);
@@ -112,11 +112,9 @@ footer {
   justify-content: center;
   align-items: center;
 
-  white-space: pre;
-
   letter-spacing: 2vmin;
-  margin: 0 50px;
-  font-size: 7vmin;
+  margin: 0 10vmin;
+  font-size: 5vmin;
   font-weight: 900;
   -webkit-text-stroke-width: 0.1vmin;
     -webkit-text-stroke-color: rgb(179, 0, 98);
