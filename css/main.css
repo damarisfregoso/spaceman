@@ -3,10 +3,10 @@
 }
 
 header {
+  height: 15vmin;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15vmin;
 
   background-image: url(https://i.pinimg.com/736x/ed/a8/19/eda819a7a40d7fb7967a019a7afa64e9.jpg);
   background-position: center;
@@ -79,6 +79,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  color: white;
 }
 
 #subhead {
@@ -141,10 +143,6 @@ img {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-footer {
-  color: white;
 }
 
 #letter-Y {
