@@ -40,6 +40,8 @@ A **space theme letter guessing game**! With space theme words to challenge the 
 
 [Click To play](https://damarisfregoso.github.io/spaceman/)
 
+<div align='left'>
+
 <details open>
   <summary> Instructions </summary>
     
@@ -54,12 +56,18 @@ A **space theme letter guessing game**! With space theme words to challenge the 
     5. When the player has 0 guesses left and the spaceman is gone, a Play Again button will appear to reset the game. 
 </details>
 
+</div>
+
 ## 📡 Upcoming Features
+
+<div align='left'>
 
 - [❌] Display hints for each given word
 
 - [❌] Have different themes the player can choose from
 
 - [❌] When the game is won have a sound indicating that they have won 
+
+</div>
 
 </div>
