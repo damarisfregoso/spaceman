@@ -92,7 +92,7 @@ function renderMusic() {
 }
 
 function handleBtnClick(evt) {
-  //get the clicked letter 
+  //gets the clicked letter from the button that triggerd the event 
   const letter = evt.target.innerText;
   //guard to determine whether to proceed with the function 
   if (evt.target.tagName !== 'BUTTON' || guess.includes(letter) || wrongGuessed.includes(letter) || winner) return;
