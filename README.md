@@ -33,7 +33,6 @@ A **space theme letter guessing game**! With space theme words to challenge the 
 ![Github](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
 ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
-![Node](https://img.shields.io/badge/-Node.js-05122A?style=flat&logo=node.js)
 ![VSCode](https://img.shields.io/badge/-VS_Code-05122A?style=flat&logo=visualstudio)
 
 ## 📝 Getting Started
